@@ -1,0 +1,21 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin list{
+    list-style: none;
+}
+
+@mixin inter{
+    font-family: "Inter";
+}
+
+@mixin jua{
+    font-family: "Jua";
+}
+
+@mixin border-rad{
+    border-radius: 5px;
+}
