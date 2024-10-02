@@ -1,0 +1,109 @@
+@use '../variables/variables' as*;
+
+@use '../mixins/mixin' as*;
+
+
+
+
+.countries{
+    @include margin-bottom;
+    article{
+        h3{
+            @extend %h3;
+
+        }
+        p.title{
+            @extend %sub-title;
+            letter-spacing: 0.02em;
+        }
+    }
+    .countries-card{
+        
+        overflow: scroll;
+        display: flex;
+        
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .country-card{
+            width: 75%;
+            flex-shrink: 0;
+            padding-left: $p-20;
+            margin-top: $p-48;
+            img{
+                width: 100%;
+            }
+            
+        }
+        div{
+            position: relative;
+            article{
+                background-color: $main-color;
+                position: absolute;
+                bottom: $p-12;
+                right: $p-12;;
+                left: $p-12;
+                border-radius: 16px;
+                h5{
+                    font-size: $p-17;
+                    line-height: 17.17px;
+                    @include lama-bold;
+                    padding: {
+                        top: $p-21;
+                        right: $p-12;
+                        bottom: $p-14;
+                    };
+                }
+                p{
+                    line-height: 16.16px;
+                    color: $dark-gray;
+                    font-weight: 500;
+                    padding: {
+                        bottom: $p-17;
+                        right: $p-12;
+                    };
+                }
+
+            }
+        }
+
+}}
+
+@media (min-width: 768px){
+    .countries{
+        article{
+            h3{
+                font-size: 24px;
+                line-height: 24.24px;
+                margin-bottom: 24px;
+            }
+            p.title{
+                line-height: 48.48px;
+                font-size: 48px;
+            }
+        }
+        .countries-card{
+            .country-card{
+                width: 29.7%;
+                div{
+                    article{
+                        bottom: 32px;
+                        right: $p-24;
+                        left: $p-24;
+                        h5{
+                            font-size: 24px;
+                            line-height: 24.24px;
+                            padding-bottom: 16px;
+                        }
+                        p{
+                            line-height: 18.18px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
