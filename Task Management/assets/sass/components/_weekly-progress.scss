@@ -1,0 +1,88 @@
+@use "../components/components" as *;
+
+// @use "../shared/fonts" as *;
+
+@use "../utils/mixins" as *;
+
+@use "../shared/properties" as *;
+
+.weekly-progress-card {
+  font-family: "Poppins-Regular";
+  margin-top: $p-40;
+  padding-right: $p-40;
+  .inner-weekly-progress {
+    @include inner;
+    padding-block: $p-28;
+    padding-left: $p-28;
+    position: relative;
+    .three-dots{
+      position: absolute;
+      right: $p-12;
+      top: $p-12;
+    }
+    .circle-container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 48px;
+      margin-top: 58px;
+
+
+      .inner-circle {
+        position: relative;
+        width: 150px;
+        height: 150px;
+
+        svg{
+          position: relative;
+          width: 150px;
+          height: 150px;
+
+          circle{
+            width: 150px;
+            height: 150px;
+            fill: none;
+            stroke-width: 10;
+            stroke: #000;
+            transform: translate(5px,5px);
+            stroke-dasharray: 440;
+            stroke-dashoffset: 440;
+            &:nth-child(1){
+              stroke-dashoffset: 0;
+              stroke: #f3f3f3;
+            }
+            &:nth-child(1){
+              stroke-dashoffset: calc( 440 - (440 * 75 ) / 100);
+              stroke: $dark-green;
+            }
+          }
+        }
+        .number{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $progress-color;
+          font-size: 32px;
+        }
+
+       
+      }
+      p{
+        position: absolute;
+        bottom: 45px;
+    left: 28px;
+        display: flex;
+          justify-content: center;
+          align-items: center;
+        color: $text-main;
+      }
+    }
+  }
+}

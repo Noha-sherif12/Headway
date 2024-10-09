@@ -1,0 +1,230 @@
+@use "./properties" as *;
+
+@for $i from 10 through 18 {
+  .fs-#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+$fs-12-25: 12.25px;
+$line-13-13: 13.13px;
+
+.d-flex {
+  display: flex;
+}
+.d-none {
+  display: none;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.flex-column {
+  flex-direction: column;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-wrong {
+  background-color: $light-danger-color;
+}
+.bg-dark-wrong {
+  background-color: $danger-color;
+}
+
+.bg-attention {
+  background-color: $light-attention;
+}
+.bg-dark-attention {
+  background-color: $yellow;
+}
+
+.bg-success {
+  background-color: $light-success-color;
+}
+
+.bg-dark-success {
+  background-color: $success-color;
+}
+
+.bg-primary {
+  background-color: $light-primary-color;
+}
+
+.bg-dark-primary {
+  background-color: $primary-color;
+}
+
+.m-6 {
+  margin-left: -6px;
+}
+.z-1 {
+  z-index: 1;
+}
+.z-2 {
+  z-index: 2;
+}
+.pt-16 {
+  padding-top: $p-16;
+}
+.pt-28 {
+  padding-top: $p-28;
+}
+.pt-24 {
+  padding-top: $p-24;
+}
+.pt-22 {
+  padding-top: $p-22;
+}
+.ps-12 {
+  padding-left: $p-12;
+}
+.ps-20 {
+  padding-left: $p-20;
+}
+.ps-16 {
+  padding-left: $p-16;
+}
+.ps-34 {
+  padding-left: $p-34;
+}
+.ps-36 {
+  padding-left: $p-36;
+}
+.ps-25 {
+  padding-left: $p-25;
+}
+.ps-28 {
+  padding-left: $p-28;
+}
+.pe-32 {
+  padding-right: $p-32;
+}
+.pb-4 {
+  padding-bottom: $p-4;
+}
+.pb-23 {
+  padding-bottom: $p-23;
+}
+.mb-8 {
+  margin-bottom: $p-8;
+}
+.mb-4 {
+  margin-bottom: $p-4;
+}
+.mt-8{
+  margin-top: $p-8;
+}
+.mt-16 {
+  margin-top: $p-16;
+}
+.mb-12 {
+  margin-bottom: $p-12;
+}
+.mt-36 {
+  margin-top: $p-36;
+}
+.ms-24 {
+  margin-left: $p-24;
+}
+.ms-16 {
+  margin-left: $p-16;
+}
+.mb-5 {
+  margin-bottom: $p-5;
+}
+.mb-20 {
+  margin-bottom: $p-20;
+}
+.mb-24 {
+  margin-bottom: $p-24;
+}
+.mb-28 {
+  margin-bottom: $p-28;
+}
+.mb-30 {
+  margin-bottom: $p-30;
+}
+.ms-4 {
+  margin-left: $p-4;
+}
+.ms-20 {
+  margin-left: $p-20;
+}
+.mt-24 {
+  margin-top: $p-24;
+}
+.padding-block-20 {
+  padding-block: $p-20;
+}
+.padding-block-16 {
+  padding-block: $p-16;
+}
+.w-100 {
+  width: 100%;
+}
+.text-primary {
+  color: $primary-color;
+}
+.text-gray {
+  color: $dark-gray;
+}
+.text-dark-gray {
+  color: $text-color;
+}
+.text-light-gray {
+  color: $text-color-gray;
+}
+.text-main {
+  color: $text-main;
+}
+.text-dark {
+  color: $text-dark-black;
+}
+.text-white {
+  color: $white-color;
+}
+.text-assign{
+  color: $text-assign;
+}
+.text-date{
+  color: $text-date;
+}
+.text-purple{
+  color: $purple;
+}
+.text-primary-btn{
+  color: $primary-button;
+}
+.bg-primary-btn{
+  background-color: $primary-bg;
+}
+.bg-secondary-btn{
+  background-color: $secondary-bg;
+}
+.border-secondary{
+  border: 1px solid #7784EE;
+}
+.bg-purple{
+  background-color: $purple;
+}
+.line-h-21 {
+  line-height: $p-21;
+}
+.line-h-18{
+  line-height: $p-18;
+}
+.letter-s-2 {
+  letter-spacing: 0.2px;
+}

@@ -1,0 +1,92 @@
+@use "../shared/properties" as *;
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bg-wrong {
+  background-color: $light-danger-color;
+}
+
+.bg-attention {
+  background-color: $light-attention;
+}
+
+.bg-success {
+  background-color: $light-success-color;
+}
+
+.bg-primary {
+  background-color: $light-primary-color;
+}
+
+input {
+  border: none;
+}
+
+.f-weight-400{
+    font-family: "Poppins-Regular";
+}
+
+.f-weight-500{
+    font-family: "Poppins-Medium";
+}
+
+.f-wight-600{
+    font-family: "Poppins-SemiBold";
+}
+
+.f-weight-700{
+    font-family: "Poppins-Bold";
+}
+.f-weight-800{
+    font-family: "Poppins-ExtraBold";
+}
+
+.f-weight-900{
+    font-family: "Poppins-Black";
+}
+// // font weight 900
+@font-face {
+  font-family: "Poppins-Black";
+  src: url(/assets/fonts/Poppins-Black.ttf);
+}
+
+//font weight 800
+@font-face {
+  font-family: "Poppins-ExtraBold";
+  src: url(/assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+// //font weight 700
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(/assets/fonts/Poppins-Bold.ttf);
+}
+
+// //font weight 600
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url(/assets/fonts/Poppins-SemiBold.ttf);
+}
+
+// //font weight 500
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(/assets/fonts/Poppins-Medium.ttf);
+}
+
+//font weight 400
+@font-face {
+  font-family: "Poppins-Regular";
+
+  src: url(/assets/fonts/Poppins-Regular.ttf);
+}

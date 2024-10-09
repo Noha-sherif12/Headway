@@ -1,0 +1,42 @@
+@use '../components/components' as*;
+
+// @use '../shared/fonts' as*;
+
+@use '../utils/mixins' as*;
+
+@use '../shared/properties' as*;
+
+
+    
+    .inner-task-progress{
+        margin-top: $p-40;
+        margin-bottom: $p-40;
+        @include inner;
+        padding-top: $p-28;
+        padding-inline: $p-28;
+        padding-bottom: $p-32;
+        .copy-writing{
+            @include slider;
+            background-color: $light-purple;
+            .percent-37{
+                @include percent(37.5%);
+                background-color: $dark-purple;
+            }
+        }
+        .illustrations{
+            @include slider;
+            background-color: $light-green;
+            .percent-60{
+                @include percent(60%);
+                background-color: $dark-green;
+            }
+        }
+        .ui-Design{
+            @include slider;
+            background-color: $light-blue;
+            .percent-28{
+                @include percent(28.5%);
+                background-color: $primary-color;
+            }
+        }
+    }

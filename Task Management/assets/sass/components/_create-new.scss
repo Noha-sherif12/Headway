@@ -1,0 +1,100 @@
+@use "../components/components" as *;
+
+// @use "../shared/fonts" as *;
+
+@use "../utils/mixins" as *;
+
+@use "../shared/properties" as *;
+
+// .create-new-card {
+//   padding-right: 40px;
+  
+  .inner-create-new {
+    margin-top: $p-40;
+    padding: $p-28;
+    margin-bottom: $p-24;
+    position: relative;
+    @include inner;
+    .close-button {
+      border: none;
+      position: absolute;
+      top: $p-8;
+      right: $p-8;
+      background-color: $white-color;
+    }
+    textarea {
+      resize: none;
+      border: 1px solid $purple;
+      box-shadow: 0px 5px 15px 0px #7784ee4d;
+      border-radius: $p-8;
+      padding: $p-20;
+      width: 100%;
+      height: 150px;
+      margin-bottom: $p-24;
+    }
+    .design-component {
+      border-bottom: 1px solid #ececec;
+      padding-bottom: $p-16;
+      div {
+        .design {
+          width: 92px;
+          padding-block: $p-8;
+          background-color: #ceecfd;
+          color: #1778b0;
+          border-radius: 200px;
+        }
+      }
+    }
+    .done-btn {
+      background-color: $purple;
+      width: 100%;
+      padding-top: $p-12;
+      padding-bottom: $p-13;
+      line-height: $p-24;
+    }
+  }
+  .inner-illustration {
+    position: relative;
+    margin-bottom: $p-24;
+    padding: $p-16;
+    @include inner;
+    .three-dots {
+      position: absolute;
+      top: $p-12;
+      right: $p-12;
+    }
+    .illust-text {
+      width: 102px;
+      padding-block: $p-8;
+      background-color: #ceecfd;
+      color: #1778b0;
+      border-radius: 200px;
+    }
+  }
+  .inner-labels {
+    position: relative;
+    padding-top: $p-20;
+    padding-bottom: $p-24;
+    padding-inline: $p-24;
+    @include inner;
+    .three-dots {
+      position: absolute;
+      top: $p-12;
+      right: $p-12;
+    }
+    form{
+      .copy-design{
+        position: relative;
+        &::after{
+          content: '';
+          position: absolute;
+          background-color: #DBE3F1;
+          height: 0.5px;
+          width: 107%;
+          bottom: 0;
+        }
+
+      }
+    }
+  }
+// }

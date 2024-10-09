@@ -1,0 +1,113 @@
+@use "../components/components" as *;
+
+// @use "../shared/fonts" as *;
+
+@use "../utils/mixins" as *;
+
+@use "../shared/properties" as *;
+
+%rectangle {
+  width: 35.88px;
+  height: 41px;
+  position: relative;
+  clip-path: polygon(0 0, 80% 0, 100% 20%, 100% 100%, 0 100%);
+}
+
+
+  // padding-top: $p-40;
+  .inner-file-attachement {
+    margin-top: $p-40;
+    padding: $p-28;
+    @include inner;
+    div {
+      .pdf-rectangle {
+        @extend %rectangle;
+        background-color: $red;
+        p {
+          color: $white-color;
+          position: absolute;
+          bottom: $p-4;
+          left: 6px;
+        }
+      }
+      article {
+        div {
+          @include slider;
+          background-color: $light-light-blue;
+          .percent-47 {
+            @include percent(47%);
+            background-color: $primary-color;
+          }
+        }
+      }
+      .xls-rectangle {
+        @extend %rectangle;
+        background-color: $success-color;
+        p {
+          color: $white-color;
+          position: absolute;
+          bottom: $p-4;
+          left: 6px;
+        }
+      }
+    }
+  }
+  .wrong {
+    border: 0.5px solid $danger-color;
+    box-shadow: 0px 2px 1px 0px #4048520d;
+    border-radius: $p-8;
+    article {
+      p {
+        color: $danger-color;
+      }
+      span {
+        color: $text-dark-wrong;
+      }
+    }
+  }
+  .attention {
+    border: 0.5px solid $yellow;
+    box-shadow: 0px 2px 1px 0px #4048520d;
+    border-radius: $p-8;
+    article {
+      p {
+        color: $text-attention;
+      }
+      span {
+        color: $text-dark-attention;
+      }
+    }
+  }
+  .success {
+    border: 0.5px solid $success-color;
+    box-shadow: 0px 2px 1px 0px #4048520d;
+    border-radius: $p-8;
+    article {
+      p {
+        color: $text-success;
+      }
+      span {
+        color: $text-dark-success;
+      }
+    }
+  }
+  .primary {
+    border: 0.5px solid $primary-color;
+    box-shadow: 0px 2px 1px 0px #4048520d;
+    border-radius: $p-8;
+    article {
+      p {
+        color: $primary-color;
+      }
+      span {
+        color: $text-dark-primary;
+      }
+    }
+  }
+  span.sign {
+    @include circle(28px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+

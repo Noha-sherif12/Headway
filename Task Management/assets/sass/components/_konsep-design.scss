@@ -1,0 +1,33 @@
+@use "../components/components" as *;
+
+// @use "../shared/fonts" as *;
+
+@use "../utils/mixins" as *;
+
+@use "../shared/properties" as *;
+
+
+
+  .inner-konsep {
+    margin-top: $p-40;
+    @include inner;
+    padding: 28px;
+    position: relative;
+    .three-dots {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+    }
+    .konsep{
+      font-family: "Poppins-Medium";
+    }
+    .project-progress {
+      background-color: $light-success-color;
+      @include slider;
+      .percent-32 {
+        @include percent(32px);
+        background-color: $success-color;
+      }
+    }
+  }
+

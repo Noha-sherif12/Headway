@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <header class="container">
+        <nav class="d-flex ">
+            <div class="d-flex align-center">
+                <span class="d-flex align-center justify-center">T</span>
+                <p class="fs-12">Task</p>
+            </div>
+
+            <form>
+                <div class="d-flex align-center">
+                    <img src="./assets/images/search-icon.svg" alt="">
+                    <input class="fs-12" type="search" placeholder="Search everything">
+                </div>
+            </form>
+            <ul class="d-flex space-between align-center pt-24 pb-23 fs-13">
+                <li class="text-primary">Projects</li>
+                <li class="ps-34 text-gray">Settings</li>
+                <li class="ps-36 text-gray pe-32">Help</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-6 assign-card">
+                        <div class="d-flex assign-task-inner align-center space-between">
+                            <div class="d-flex align-center">
+                                <svg width="22" height="16" viewBox="0 0 22 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14 8C16.21 8 18 6.21 18 4C18 1.79 16.21 0 14 0C11.79 0 10 1.79 10 4C10 6.21 11.79 8 14 8ZM5 6V3H3V6H0V8H3V11H5V8H8V6H5ZM14 10C11.33 10 6 11.34 6 14V16H22V14C22 11.34 16.67 10 14 10Z"
+                                        fill="#C4CAD3" />
+                                </svg>
+                                <p class="ps-20 text-assign">Assign task to</p>
+                            </div>
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.99999 7.713L12.01 1.703L10.597 0.288002L5.99999 4.888L1.40399 0.288002L-0.0100098 1.702L5.99999 7.713Z"
+                                    fill="#AFBDD8" />
+                            </svg>
+                        </div>
+                        <div class="search">
+                            <form>
+                                <div class="d-flex align-center">
+                                    <img class="ps-20" src="./assets/images/search-icon.svg" alt="search icon">
+                                    <input class="ps-25" type="search" placeholder="Search">
+                                </div>
+                            </form>
+                            <div class="search-option d-flex align-center space-between mt-16">
+                                <div class="d-flex align-center">
+                                    <img src="./assets/images/image-1.svg" alt="girl profile picture">
+                                    <p class="ps-16 text-assign">Angela Smith</p>
+                                </div>
+                                <p class="text-dark-gray task-number">16 task on progress</p>
+                            </div>
+                            <div class="search-option d-flex align-center space-between">
+                                <div class="d-flex align-center">
+                                    <img src="./assets/images/image-2.svg" alt="girl profile picture">
+                                    <p class="ps-16 text-assign">Karen William</p>
+                                </div>
+                                <p class="text-dark-gray task-number">25 task on progress</p>
+                            </div>
+                            <div class="search-option d-flex align-center space-between">
+                                <div class="d-flex align-center">
+                                    <img src="./assets/images/image-3.svg" alt="girl profile picture">
+                                    <p class="ps-16 text-assign">Samantha William</p>
+                                </div>
+                                <p class="text-dark-gray task-number">35 task on progress</p>
+                            </div>
+                            <div class="search-option d-flex align-center space-between">
+                                <div class="d-flex align-center">
+                                    <img src="./assets/images/image-4.svg" alt="girl profile picture">
+                                    <p class="ps-16 text-assign">Andy Hope</p>
+                                </div>
+                                <p class="text-dark-gray task-number">12 task on progress</p>
+                            </div>
+                        </div>
+                        <div class="inner-konsep">
+                            <div class="three-dots">
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#A8B5CB" />
+                                </svg>
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#A8B5CB" />
+                                </svg>
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#A8B5CB" />
+                                </svg>
+                            </div>
+                            <p class="mb-8 text-dark fs-18 konsep">Konsep design homepage</p>
+                            <div>
+                                <div class="d-flex">
+                                    <svg width="13" height="15" viewBox="0 0 13 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.63333 0.666667C7.55412 0.278611 7.21272 0 6.81667 0H0.833333C0.373096 0 0 0.373096 0 0.833333V13.3333C0 13.7936 0.373096 14.1667 0.833333 14.1667C1.29357 14.1667 1.66667 13.7936 1.66667 13.3333V8.33333H6.33333L6.53333 9.33333C6.60895 9.72355 6.95254 10.004 7.35 10H11.6667C12.1269 10 12.5 9.62691 12.5 9.16667V2.5C12.5 2.03976 12.1269 1.66667 11.6667 1.66667H7.83333L7.63333 0.666667Z"
+                                            fill="#C4CAD3" />
+                                    </svg>
+                                    <p class="ms-4 f-weight-400 text-main fs-12">Due Nov 24</p>
+                                </div>
+                                <p class="mt-16 mb-20 fs-13 text-main line-h-21 letter-s-2 f-weight-400">Lorem ipsum
+                                    dolor sit amet,
+                                    consectetur
+                                    adipiscing elit, sed do
+                                    eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                            </div>
+                            <div class="d-flex space-between mb-12 f-weight-500">
+                                <p>Project Progress</p>
+                                <p>32%</p>
+                            </div>
+                            <div class="project-progress">
+                                <div class="percent-32"></div>
+                            </div>
+                            <div class="d-flex space-between align-center mt-24">
+                                <div class="d-flex align-center">
+                                    <img class="z-2" src="./assets/images/image-1.svg" alt="">
+                                    <img class="z-1 m-6" src="./assets/images/image-3.svg" alt="">
+                                    <img class="m-6" src="./assets/images/image-2.svg" alt="">
+                                    <p class="ms-4 f-weight-400 text-main fs-12">+ 15 people</p>
+                                </div>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.6 14C0.6 13.5562 0.621549 13.1177 0.663627 12.6853L0.0664486 12.6272C0.156664 11.7002 0.337286 10.7997 0.599385 9.93464L1.17361 10.1086C1.43027 9.26148 1.7686 8.44975 2.17952 7.68257L1.65061 7.39927C2.08523 6.58784 2.59748 5.82423 3.17744 5.11836L3.64103 5.49925C4.19833 4.82096 4.82096 4.19833 5.49925 3.64103L5.11836 3.17744C5.82423 2.59748 6.58784 2.08523 7.39927 1.65061L7.68257 2.17952C8.44975 1.7686 9.26148 1.43027 10.1086 1.17361L9.93464 0.599385C10.7997 0.337286 11.7002 0.156664 12.6272 0.0664485L12.6853 0.663627C13.1177 0.621549 13.5562 0.6 14 0.6C14.4438 0.6 14.8823 0.621549 15.3147 0.663627L15.3728 0.0664486C16.2998 0.156664 17.2003 0.337286 18.0654 0.599385L17.8914 1.17361C18.7385 1.43027 19.5502 1.7686 20.3174 2.17952L20.6007 1.65061C21.4122 2.08523 22.1758 2.59748 22.8816 3.17744L22.5007 3.64103C23.179 4.19833 23.8017 4.82096 24.359 5.49925L24.8226 5.11836C25.4025 5.82423 25.9148 6.58784 26.3494 7.39927L25.8205 7.68257C26.2314 8.44975 26.5697 9.26148 26.8264 10.1086L27.4006 9.93464C27.6627 10.7997 27.8433 11.7002 27.9336 12.6272L27.3364 12.6853C27.3785 13.1177 27.4 13.5562 27.4 14C27.4 14.4438 27.3785 14.8823 27.3364 15.3147L27.9336 15.3728C27.8433 16.2998 27.6627 17.2003 27.4006 18.0654L26.8264 17.8914C26.5697 18.7385 26.2314 19.5502 25.8205 20.3174L26.3494 20.6007C25.9148 21.4122 25.4025 22.1758 24.8226 22.8816L24.359 22.5007C23.8017 23.179 23.179 23.8017 22.5007 24.359L22.8816 24.8226C22.1758 25.4025 21.4122 25.9148 20.6007 26.3494L20.3174 25.8205C19.5502 26.2314 18.7385 26.5697 17.8914 26.8264L18.0654 27.4006C17.2003 27.6627 16.2998 27.8433 15.3728 27.9336L15.3147 27.3364C14.8823 27.3785 14.4438 27.4 14 27.4C13.5562 27.4 13.1177 27.3785 12.6853 27.3364L12.6272 27.9336C11.7002 27.8433 10.7997 27.6627 9.93464 27.4006L10.1086 26.8264C9.26148 26.5697 8.44975 26.2314 7.68257 25.8205L7.39927 26.3494C6.58784 25.9148 5.82423 25.4025 5.11836 24.8226L5.49925 24.359C4.82096 23.8017 4.19833 23.179 3.64103 22.5007L3.17744 22.8816C2.59748 22.1758 2.08523 21.4122 1.65061 20.6007L2.17952 20.3174C1.7686 19.5502 1.43027 18.7385 1.17361 17.8914L0.599385 18.0654C0.337286 17.2003 0.156664 16.2998 0.0664485 15.3728L0.663627 15.3147C0.621549 14.8823 0.6 14.4438 0.6 14Z"
+                                        fill="white" stroke="#D0D0D0" stroke-width="1.2" stroke-dasharray="3 3" />
+                                    <path
+                                        d="M18.4005 14.6181H15.5725V17.5161H14.0885V14.6181H11.2605V13.2741H14.0885V10.3761H15.5725V13.2741H18.4005V14.6181Z"
+                                        fill="#C9C9C9" />
+                                </svg>
+
+                            </div>
+
+                        </div>
+                        <div class="inner-create-new">
+                            <button class="close-button">
+                                <img src="./assets/images/close-small.svg" alt="close">
+                            </button>
+                            <p class="fs-15 text-dark f-weight-500">Create New Card</p>
+                            <textarea class="mt-16 f-weight-400" name="" id=""
+                                placeholder="What is the task?"></textarea>
+                            <div class="d-flex space-between design-component">
+                                <div class="d-flex align-center">
+                                    <img src="./assets/images/tag.svg" alt="">
+                                    <p class="design d-flex align-center justify-center fs-12 ms-20 f-weight-500">UI
+                                        Design</p>
+                                </div>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.6 14C0.6 13.5562 0.621549 13.1177 0.663627 12.6853L0.0664486 12.6272C0.156664 11.7002 0.337286 10.7997 0.599385 9.93464L1.17361 10.1086C1.43027 9.26148 1.7686 8.44975 2.17952 7.68257L1.65061 7.39927C2.08523 6.58784 2.59748 5.82423 3.17744 5.11836L3.64103 5.49925C4.19833 4.82096 4.82096 4.19833 5.49925 3.64103L5.11836 3.17744C5.82423 2.59748 6.58784 2.08523 7.39927 1.65061L7.68257 2.17952C8.44975 1.7686 9.26148 1.43027 10.1086 1.17361L9.93464 0.599385C10.7997 0.337286 11.7002 0.156664 12.6272 0.0664485L12.6853 0.663627C13.1177 0.621549 13.5562 0.6 14 0.6C14.4438 0.6 14.8823 0.621549 15.3147 0.663627L15.3728 0.0664486C16.2998 0.156664 17.2003 0.337286 18.0654 0.599385L17.8914 1.17361C18.7385 1.43027 19.5502 1.7686 20.3174 2.17952L20.6007 1.65061C21.4122 2.08523 22.1758 2.59748 22.8816 3.17744L22.5007 3.64103C23.179 4.19833 23.8017 4.82096 24.359 5.49925L24.8226 5.11836C25.4025 5.82423 25.9148 6.58784 26.3494 7.39927L25.8205 7.68257C26.2314 8.44975 26.5697 9.26148 26.8264 10.1086L27.4006 9.93464C27.6627 10.7997 27.8433 11.7002 27.9336 12.6272L27.3364 12.6853C27.3785 13.1177 27.4 13.5562 27.4 14C27.4 14.4438 27.3785 14.8823 27.3364 15.3147L27.9336 15.3728C27.8433 16.2998 27.6627 17.2003 27.4006 18.0654L26.8264 17.8914C26.5697 18.7385 26.2314 19.5502 25.8205 20.3174L26.3494 20.6007C25.9148 21.4122 25.4025 22.1758 24.8226 22.8816L24.359 22.5007C23.8017 23.179 23.179 23.8017 22.5007 24.359L22.8816 24.8226C22.1758 25.4025 21.4122 25.9148 20.6007 26.3494L20.3174 25.8205C19.5502 26.2314 18.7385 26.5697 17.8914 26.8264L18.0654 27.4006C17.2003 27.6627 16.2998 27.8433 15.3728 27.9336L15.3147 27.3364C14.8823 27.3785 14.4438 27.4 14 27.4C13.5562 27.4 13.1177 27.3785 12.6853 27.3364L12.6272 27.9336C11.7002 27.8433 10.7997 27.6627 9.93464 27.4006L10.1086 26.8264C9.26148 26.5697 8.44975 26.2314 7.68257 25.8205L7.39927 26.3494C6.58784 25.9148 5.82423 25.4025 5.11836 24.8226L5.49925 24.359C4.82096 23.8017 4.19833 23.179 3.64103 22.5007L3.17744 22.8816C2.59748 22.1758 2.08523 21.4122 1.65061 20.6007L2.17952 20.3174C1.7686 19.5502 1.43027 18.7385 1.17361 17.8914L0.599385 18.0654C0.337286 17.2003 0.156664 16.2998 0.0664485 15.3728L0.663627 15.3147C0.621549 14.8823 0.6 14.4438 0.6 14Z"
+                                        fill="white" stroke="#D0D0D0" stroke-width="1.2" stroke-dasharray="3 3" />
+                                    <path
+                                        d="M18.4005 14.6181H15.5725V17.5161H14.0885V14.6181H11.2605V13.2741H14.0885V10.3761H15.5725V13.2741H18.4005V14.6181Z"
+                                        fill="#C9C9C9" />
+                                </svg>
+                            </div>
+                            <div class="d-flex space-between pt-16">
+                                <div class="d-flex align-center">
+                                    <img src="./assets/images/Vector.svg" alt="user plus">
+                                    <img class="ps-20" src="./assets/images/image-3.svg" alt="girl profile picture">
+                                    <p class="ps-12 f-weight-400 text-main">Samantha</p>
+                                </div>
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.6 14C0.6 13.5562 0.621549 13.1177 0.663627 12.6853L0.0664486 12.6272C0.156664 11.7002 0.337286 10.7997 0.599385 9.93464L1.17361 10.1086C1.43027 9.26148 1.7686 8.44975 2.17952 7.68257L1.65061 7.39927C2.08523 6.58784 2.59748 5.82423 3.17744 5.11836L3.64103 5.49925C4.19833 4.82096 4.82096 4.19833 5.49925 3.64103L5.11836 3.17744C5.82423 2.59748 6.58784 2.08523 7.39927 1.65061L7.68257 2.17952C8.44975 1.7686 9.26148 1.43027 10.1086 1.17361L9.93464 0.599385C10.7997 0.337286 11.7002 0.156664 12.6272 0.0664485L12.6853 0.663627C13.1177 0.621549 13.5562 0.6 14 0.6C14.4438 0.6 14.8823 0.621549 15.3147 0.663627L15.3728 0.0664486C16.2998 0.156664 17.2003 0.337286 18.0654 0.599385L17.8914 1.17361C18.7385 1.43027 19.5502 1.7686 20.3174 2.17952L20.6007 1.65061C21.4122 2.08523 22.1758 2.59748 22.8816 3.17744L22.5007 3.64103C23.179 4.19833 23.8017 4.82096 24.359 5.49925L24.8226 5.11836C25.4025 5.82423 25.9148 6.58784 26.3494 7.39927L25.8205 7.68257C26.2314 8.44975 26.5697 9.26148 26.8264 10.1086L27.4006 9.93464C27.6627 10.7997 27.8433 11.7002 27.9336 12.6272L27.3364 12.6853C27.3785 13.1177 27.4 13.5562 27.4 14C27.4 14.4438 27.3785 14.8823 27.3364 15.3147L27.9336 15.3728C27.8433 16.2998 27.6627 17.2003 27.4006 18.0654L26.8264 17.8914C26.5697 18.7385 26.2314 19.5502 25.8205 20.3174L26.3494 20.6007C25.9148 21.4122 25.4025 22.1758 24.8226 22.8816L24.359 22.5007C23.8017 23.179 23.179 23.8017 22.5007 24.359L22.8816 24.8226C22.1758 25.4025 21.4122 25.9148 20.6007 26.3494L20.3174 25.8205C19.5502 26.2314 18.7385 26.5697 17.8914 26.8264L18.0654 27.4006C17.2003 27.6627 16.2998 27.8433 15.3728 27.9336L15.3147 27.3364C14.8823 27.3785 14.4438 27.4 14 27.4C13.5562 27.4 13.1177 27.3785 12.6853 27.3364L12.6272 27.9336C11.7002 27.8433 10.7997 27.6627 9.93464 27.4006L10.1086 26.8264C9.26148 26.5697 8.44975 26.2314 7.68257 25.8205L7.39927 26.3494C6.58784 25.9148 5.82423 25.4025 5.11836 24.8226L5.49925 24.359C4.82096 23.8017 4.19833 23.179 3.64103 22.5007L3.17744 22.8816C2.59748 22.1758 2.08523 21.4122 1.65061 20.6007L2.17952 20.3174C1.7686 19.5502 1.43027 18.7385 1.17361 17.8914L0.599385 18.0654C0.337286 17.2003 0.156664 16.2998 0.0664485 15.3728L0.663627 15.3147C0.621549 14.8823 0.6 14.4438 0.6 14Z"
+                                        fill="white" stroke="#D0D0D0" stroke-width="1.2" stroke-dasharray="3 3" />
+                                    <path
+                                        d="M18.4005 14.6181H15.5725V17.5161H14.0885V14.6181H11.2605V13.2741H14.0885V10.3761H15.5725V13.2741H18.4005V14.6181Z"
+                                        fill="#C9C9C9" />
+                                </svg>
+                            </div>
+                            <button class="btn mt-24 text-white done-btn text-white fs-14 f-weight-500">Done</button>
+                        </div>
+                        <div class="inner-illustration">
+                            <div class="three-dots">
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#A8B5CB" />
+                                </svg>
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#A8B5CB" />
+                                </svg>
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#A8B5CB" />
+                                </svg>
+                            </div>
+                            <p class="fs-12 illust-text d-flex align-center justify-center f-weight-500">Illustration
+                            </p>
+                            <p class="mt-16 line-h-21 fs-14 text-dark letter-s-2 f-weight-400">Membuat konsep ilustrasi
+                                untuk halaman
+                                homepage dan about us</p>
+                            <div class="d-flex space-between mt-16">
+                                <div class="d-flex align-center">
+                                    <img src="./assets/images/flag-fill.svg" alt="">
+                                    <p class="ms-4 fs-12 text-light-gray f-weight-400">Nov 24</p>
+                                    <img class="ms-24" src="./assets/images/Group-220.svg" alt="">
+                                    <p class="ms-4 fs-12 text-light-gray f-weight-400">2</p>
+                                </div>
+                                <img src="./assets/images/Rectangle-1.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="inner-labels">
+                            <div class="three-dots">
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#A8B5CB" />
+                                </svg>
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#A8B5CB" />
+                                </svg>
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#A8B5CB" />
+                                </svg>
+                            </div>
+                            <p class="mb-28 f-weight-500 fs-15">Labels</p>
+                            <form action="">
+                                <div class="d-flex space-between padding-block-16 copy-design">
+                                    <div class="d-flex align-center">
+                                        <img src="./assets/images/tag.svg" alt="tag icon">
+                                        <label class="ms-16 f-weight-400 fs-13" for="Copywriting">Copywriting</label>
+                                    </div>
+                                    <input id="Copywriting" type="checkbox" checked>
+                                </div>
+                                <div class="d-flex space-between padding-block-16 copy-design">
+                                    <div class="d-flex align-center">
+                                        <img src="./assets/images/tag.svg" alt="tag icon">
+                                        <label class="ms-16 f-weight-400 fs-13" for="ui-Design">UI Design</label>
+                                    </div>
+                                    <input id="ui-Design" type="checkbox">
+                                </div>
+                                <div class="d-flex space-between padding-block-16">
+                                    <div class="d-flex align-center">
+                                        <img src="./assets/images/tag.svg" alt="tag icon">
+                                        <label class="ms-16 f-weight-400 fs-13"
+                                            for="illustrations">Illustrations</label>
+                                    </div>
+                                    <input id="illustrations" type="checkbox">
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 weekly-progress-card">
+                        <div class="inner-weekly-progress">
+                            <div class="three-dots">
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#A8B5CB" />
+                                </svg>
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#A8B5CB" />
+                                </svg>
+                                <svg width="4" height="4" viewBox="0 0 4 4" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2" cy="2" r="2" fill="#A8B5CB" />
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="mb-12 fs-15 text-dark">Weekly Progress</p>
+                            </div>
+                            <p class="fs-12 text-main">Start from Nov 7-14, 2020</p>
+                            <div class="circle-container">
+                                <div class="inner-circle">
+                                    <svg>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                        <circle cx="70" cy="70" r="70"></circle>
+                                    </svg>
+                                    <div class="number">
+                                        <h2 class="f-weight-600">75<span>%</span></h2>
+                                        <p class="fs-12 f-weight-400">tasks completed</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="inner-recent-activity">
+                            <p class="f-weight-500">Recent Activity</p>
+                            <div class="d-flex flex-column">
+                                <div class="d-flex align-center pt-28">
+                                    <span class="green-frame">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.166687 12.1667V1.50002C0.166687 0.763641 0.763641 0.166687 1.50002 0.166687H10.8334C11.5697 0.166687 12.1667 0.763641 12.1667 1.50002V8.16669C12.1667 8.90307 11.5697 9.50002 10.8334 9.50002H4.16669C3.87811 9.49949 3.59723 9.59311 3.36669 9.76669L0.166687 12.1667ZM1.50002 1.50002V9.50002L2.92269 8.43335C3.15312 8.25956 3.43407 8.16591 3.72269 8.16669H10.8334V1.50002H1.50002Z"
+                                                fill="white" />
+                                            <path d="M0.833374 0.833252H11.5V8.83325H2.61115L0.833374 10.611V0.833252Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                    <div class="people-acyivity">
+                                        <p class="comment f-weight-400 line-h-18 "><span
+                                                class="f-weight-600">Karen</span> leave some comments on Konsep
+                                            Ilustrasi
+                                        </p>
+                                        <p class="f-weight-400 mt-8 fs-14 text-main">Aug 10</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-center pt-28">
+                                    <span class="purple-frame">
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M0.661262 12C0.476502 11.9997 0.300371 11.9218 0.175843 11.7853C0.0490184 11.6499 -0.0140013 11.4668 0.00261995 11.2821L0.163987 9.5077L7.6185 2.05581L9.94812 4.38477L2.49558 11.836L0.721199 11.9974C0.700781 11.9993 0.680363 12 0.661262 12ZM10.4131 3.91911L8.08416 1.59015L9.48114 0.193171C9.60468 0.0694931 9.77232 0 9.94713 0C10.1219 0 10.2896 0.0694931 10.4131 0.193171L11.8101 1.59015C11.9338 1.71369 12.0033 1.88133 12.0033 2.05614C12.0033 2.23095 11.9338 2.39859 11.8101 2.52213L10.4138 3.91845L10.4131 3.91911Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                    <div class="people-acyivity">
+                                        <p class="comment f-weight-400 line-h-18"><span
+                                                class="f-weight-600">Karen</span> change project info on Project
+                                            Homepage
+                                        </p>
+                                        <p class="f-weight-400 mt-8 fs-14 text-main">Aug 10</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-center pt-28">
+                                    <span class="yellow-frame">
+                                        <svg width="11" height="13" viewBox="0 0 11 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.36111 0.888991C6.2951 0.565611 6.0106 0.333435 5.68056 0.333435H0.694445C0.310913 0.333435 0 0.644349 0 1.02788V11.4445C0 11.8281 0.310913 12.139 0.694445 12.139C1.07798 12.139 1.38889 11.8281 1.38889 11.4445V7.27788H5.27778L5.44445 8.11121C5.50746 8.4364 5.79379 8.67014 6.125 8.66677H9.72222C10.1058 8.66677 10.4167 8.35586 10.4167 7.97232V2.41677C10.4167 2.03324 10.1058 1.72232 9.72222 1.72232H6.52778L6.36111 0.888991Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </span>
+                                    <div class="people-acyivity">
+                                        <p class="comment f-weight-400 line-h-18"><span
+                                                class="f-weight-600">Andrea</span> change the due date of Project
+                                            Homepage
+                                        </p>
+                                        <p class="mt-8 f-weight-400 fs-14 text-main">Aug 10</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner-file-attachement">
+                            <p class="mb-30">File Attachment</p>
+                            <div>
+                                <div class="d-flex mb-28">
+                                    <div class="pdf-rectangle">
+                                        <p class="fs-10">PDF</p>
+                                    </div>
+                                    <article class="d-flex space-between align-center flex-wrap ms-20">
+                                        <p>User-Journey.pdf</p>
+                                        <p>4.5MB</p>
+                                        <span>Cancel</span>
+                                        <div>
+                                            <div class="percent-47"></div>
+                                        </div>
+                                    </article>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="xls-rectangle">
+                                        <p class="fs-10">XLS</p>
+                                    </div>
+                                    <article class="d-flex space-between align-center flex-wrap ms-20">
+                                        <p>Data-Structure.xls</p>
+                                        <p>12.4 MB</p>
+                                        <span>Download</span>
+                                        <span>Angela Hope</span>
+                                    </article>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                        <div class="wrong mt-36 bg-wrong d-flex ps-20 padding-block-16">
+                            <span class="sign bg-dark-wrong">
+                                <svg width="3" height="12" viewBox="0 0 3 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.75 0.349999L2.51 7.595H0.74L0.485 0.349999H2.75ZM1.67 11.105C1.29 11.105 0.975 10.99 0.725 10.76C0.485 10.52 0.365 10.225 0.365 9.875C0.365 9.525 0.485 9.235 0.725 9.005C0.975 8.765 1.29 8.645 1.67 8.645C2.04 8.645 2.345 8.765 2.585 9.005C2.825 9.235 2.945 9.525 2.945 9.875C2.945 10.225 2.825 10.52 2.585 10.76C2.345 10.99 2.04 11.105 1.67 11.105Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                            <article class="ps-20">
+                                <p class="fs-13 mb-4">Someting wrong</p>
+                                <span class="fs-11">Lorem ipsum dolor sit amet</span>
+                            </article>
+                        </div>
+                        <div class="attention  mt-16 bg-attention d-flex ps-20 padding-block-16">
+                            <span class="sign bg-dark-attention">
+                                <svg width="4" height="12" viewBox="0 0 4 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.1 2.7C1.73 2.7 1.42 2.585 1.17 2.355C0.93 2.115 0.81 1.82 0.81 1.47C0.81 1.12 0.93 0.829999 1.17 0.599999C1.42 0.359999 1.73 0.239999 2.1 0.239999C2.47 0.239999 2.775 0.359999 3.015 0.599999C3.265 0.829999 3.39 1.12 3.39 1.47C3.39 1.82 3.265 2.115 3.015 2.355C2.775 2.585 2.47 2.7 2.1 2.7ZM3.135 3.69V12H1.035V3.69H3.135Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+                            <article class="ps-20">
+                                <p class="fs-13 mb-4">Need Attention</p>
+                                <span class="fs-11">Adipiscing elit, sed do eiusmod</span>
+                            </article>
+                        </div>
+                        <div class="success  mt-16 bg-success d-flex ps-20 padding-block-16">
+                            <span class="sign bg-dark-success">
+                                <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.14936 4.68331L4.44919 7.98314L11.0489 1.38348" stroke="white"
+                                        stroke-width="1.45814" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <article class="ps-20">
+                                <p class="fs-13 mb-4">Success</p>
+                                <span class="fs-11">consectetur adipiscing elit sed</span>
+                            </article>
+                        </div>
+                        <div class="primary  mt-16 bg-primary d-flex ps-20 padding-block-16">
+                            <span class="sign bg-dark-primary">
+                                <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.14936 4.68331L4.44919 7.98314L11.0489 1.38348" stroke="white"
+                                        stroke-width="1.45814" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <article class="ps-20">
+                                <p class="fs-13 mb-4">Other Condition</p>
+                                <span class="fs-11">consectetur adipiscing elit sed</span>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 tasks-card">
+                        <div class="inner-tasks">
+                            <p class="f-weight-500">Tasks</p>
+                            <div class="d-flex align-center space-between task-options options">
+                                <div class="d-flex align-center">
+                                    <!-- <span></span> -->
+                                    <input type="radio" name="task"/>
+                                    <label for="task1" class="task-label">
+                                        <span class="custom-radio"></span>
+                                        <div class="d-flex flex-column">
+                                            <p class="pb-4 f-weight-500 fs-13 text-main">Design Homepage</p>
+                                            <p class="f-weight-400 text-date fs-12">Thu, Nov 23</p>
+                                        </div>
+                                </div>
+                                <img src="./assets/images/Rectangle-1.svg" alt="girl profile picture">
+                            </div>
+                            <div class="d-flex align-center space-between task-options options">
+                                <div class="d-flex align-center">
+                                    <input type="radio" name="task" checked />
+                                    <label for="task2" class="task-label">
+                                        <span class="custom-radio"></span>
+                                        <div class="d-flex flex-column">
+                                            <p class="pb-4 f-weight-500 fs-13 text-main">Sketsa Ilustrasi</p>
+                                            <p class="f-weight-400 text-date fs-12">Mon, Nov 15</p>
+                                        </div>
+                                </div>
+                                <img src="./assets/images/Rectangle-2.svg" alt="girl profile picture">
+                            </div>
+                            <div class="d-flex align-center space-between options">
+                                <div class="d-flex align-center">
+                                    <!-- <span></span> -->
+                                    <input type="radio" name="task" />
+                                    <label for="task3" class="task-label">
+                                      <span class="custom-radio"></span>
+                                    <div>
+                                        <p class="pb-4 f-weight-500 fs-13 text-main">Onboarding Design</p>
+                                        <p class="f-weight-400 fs-12 text-date">Wed, Nov 15</p>
+                                    </div>
+                                </div>
+                                <img src="./assets/images/Rectangle-3.svg" alt="girl profile picture">
+                            </div>
+                        </div>
+                        <div class="inner-task-progress ">
+                            <p class="f-weight-500 text-dark fs-15">
+                                Task Progress
+                            </p>
+                            <div class="d-flex space-between pt-22 mb-5">
+                                <p class="f-weight-400 fs-12 text-dark">Copywriting</p>
+                                <p class="f-weight-400 text-main fs-12">3/8</p>
+                            </div>
+                            <div class="copy-writing mb-24">
+                                <div class="percent-37"></div>
+                            </div>
+                            <div class="d-flex space-between mb-5">
+                                <p class="f-weight-400 fs-12 text-dark">Illustrations</p>
+                                <p class="f-weight-400 text-main fs-12">6/10</p>
+                            </div>
+                            <div class="illustrations">
+                                <div class="percent-60"></div>
+                            </div>
+                            <div class="d-flex space-between pt-22 mb-5">
+                                <p class="f-weight-400 fs-12 text-dark">UI Design</p>
+                                <p class="f-weight-400 text-main fs-12">2/7</p>
+                            </div>
+                            <div class="ui-Design">
+                                <div class="percent-28"></div>
+                            </div>
+                        </div>
+                        <div class="inner-buttons">
+                            <div class="mb-20">
+                                <button class="btn w-100 text-white bg-purple">Normal Button</button>
+                            </div>
+                            <div class="mb-20">
+                                <button class="btn w-100 text-primary-btn bg-primary-btn">Loading Button</button>
+                            </div>
+                            <div>
+                                <button class="btn w-100 text-purple bg-secondary-btn border-secondary">Secondary
+                                    Button</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
