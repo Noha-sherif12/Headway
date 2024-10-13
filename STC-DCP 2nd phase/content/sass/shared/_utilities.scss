@@ -1,0 +1,89 @@
+//properties
+@use './properties' as*;
+
+.gutter-x{
+    --bs-gutter-x: 0px;
+}
+.fs-13{
+    font-size: $p-13;
+}
+.fs-16{
+    font-size: $p-16;
+}
+.fs-24{
+    font-size: $p-24;
+}
+.fs-20{
+    font-size: $p-20;
+}
+.fs-32{
+    font-size: $p-32;
+}
+.ms-36{
+    margin-right: $p-36;
+}
+.ms-21{
+    margin-left: $p-21;
+}
+.ms-5px{
+    margin-left: $p-5;
+}
+.ms-40{
+    margin-left: $p-40;
+}
+.ms-62{
+    margin-left: $p-62;
+}
+.me-28{
+    margin-right: $p-28;
+}
+.me-48{
+    margin-right: $p-48;
+}
+.ms-8{
+    margin-left: $p-8;
+}
+.mb-17{
+    margin-bottom: $p-17;
+}
+.mb-14{
+    margin-bottom: $p-14;
+}
+.mb-22{
+    margin-bottom: $p-22;
+}
+.mb-28{
+    margin-bottom: $p-28;
+}
+.mb-34{
+    margin-bottom: $p-34;
+}
+
+.bg-input{
+    background-color: $light-gray;
+}
+
+.bg-red{
+    background-color: $red-color;
+}
+
+.bg-table{
+    background-color: $primary-gray;
+}
+
+.bg-secondary-gray{
+    background-color: $secondary-gray;
+}
+.bg-main{
+    background-color: $main-color;
+}
+
+.w-336{
+    width: $p-336;
+}
+
+.w-288{
+    width: $p-288;
+}
+
+

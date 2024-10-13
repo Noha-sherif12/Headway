@@ -1,0 +1,44 @@
+@use "../shared/properties" as *;
+
+header {
+  margin-bottom: $p-5;
+  nav {
+    padding-right: $p-36 !important;
+    img {
+      margin-top: $p-13;
+      margin-bottom: $p-14;
+      margin-left: $p-32;
+    }
+    div{
+      .global{
+        padding-block: $p-29;
+        height: 100%;
+        position: relative;
+        &::after{
+          content: "";
+          position: absolute;
+          background-color: $white-color;
+          width: $p-5;
+          top: 0;
+          left: -$p-16;
+          height: 100%;
+        }
+        &::before{
+          content: "";
+          position: absolute;
+          background-color: $white-color;
+          width: $p-5;
+          top: 0;
+          right: -$p-16;
+          height: 100%;
+        }
+      }
+    }
+      form {
+        select {
+          border: none;
+        }
+      
+    }
+  }
+}
