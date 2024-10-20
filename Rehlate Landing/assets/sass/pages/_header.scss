@@ -1,0 +1,193 @@
+@use '../variables/variables' as*;
+@use '../mixins/mixin' as*;
+
+%h1{
+    font-size: $f-size-26;
+    font-weight: $f-weight-b;
+    line-height: $line-h-26;
+}
+%arrow{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $main-color;
+    @include flex-center;
+}
+
+header{
+    background-image: url(/assets/images/vintage-photo@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    @include margin-bottom;
+    nav{
+        @include flex-space-between;
+        margin-bottom: $p-80;
+        padding-top: $p-36;
+        h1{
+            color: $main-color;
+            letter-spacing: 0.12em;
+            @extend %h1;
+            span{
+                @extend %h1;
+                color: $yellow;
+            }
+        }
+        ul.main-list{
+            @include list-style;
+            display: none;
+            align-items: center;
+            color: $main-color;
+            font-size: 20px;
+            line-height: 21.2px;
+            li{
+                padding-left: 44px;
+                @include semi-bold;
+            }
+        }
+        .youtube{
+            margin-left: 60px;
+            display: none;
+            align-items: center;
+            width: 42px;
+            .youtube-word{
+                font-size: 20px;
+                color: $main-color;
+                line-height: 21.2px;
+                @include semi-bold;
+            }
+            .youtube-icon{
+                background-color: $main-color;
+                margin-right: 12px;
+                border-radius: 15px;
+                padding: {
+                    top: 9px;
+                    bottom: 8px;
+                    right: 16px;
+                    left: 17px;
+                };
+            }
+        }
+        
+        span.bars{
+            border-radius: 6px;
+            background-color: $main-color;
+            display: flex;
+            padding: {
+                inline: $p-8;
+                block: $p-9;
+            };
+        }
+    }
+    article{
+        @include text-center;
+        color: $main-color;
+        h2{
+            width: 300px;
+            @include m-auto;
+            font-size: 38px;
+            margin-bottom: $p-18;
+            line-height: $line-h-49;
+            font-weight: $f-weight-b;
+            letter-spacing: 0.02em;
+        }
+        p{
+            width: 245px;
+            @include m-auto;
+            line-height: $line-h-30;
+            font-weight: $f-weight-sm-l;
+            font-size: $f-size-17;
+            letter-spacing: 0.02em;
+        }
+    }
+    .book-now{
+        font-size: $f-size-17;
+        width: 300px;
+        font-weight: $f-weight-sb;
+        background-color: $yellow;
+        line-height: $line-h-24;
+        @include m-auto;
+        @include text-center;
+        color: $secondary-color;
+        margin-top: $p-36;
+        border-radius: $p-15;
+        padding-block: $p-15;
+        @include flex-center;
+        span.left-arrow{
+            @extend %arrow;
+            margin-right: $p-9;
+        }
+    }
+    .scroll-down{
+        @include text-center;
+        margin-top: 92px;
+        margin-bottom: $p-62;
+        position: relative;
+        span.arrow-span{
+            position: absolute;
+            left: 7%;
+            top: -25%;
+        }
+        p{
+            color: $main-color;
+            margin-bottom: $p-29;
+            line-height: 18.02px;
+            font-size: 17px;
+            @include semi-bold;
+        }
+        span.mouse{
+            margin-bottom: 60px;
+            background-color: $main-color;
+            display: inline-block;
+            width: 32px;
+            height: 53px;
+            border-radius: 18px;
+            padding: {
+                top: 11px;
+                inline: 14px;
+                bottom: 31px;
+            };
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    header{
+        nav{
+            ul.main-list{
+                display: flex;
+            }
+            span.bars{
+                display: none;
+            }
+            .youtube{
+                display: flex;
+            }
+        }
+        article{
+            h2{
+                width: 752px;
+                font-size: 68px;
+                margin-bottom: 28px;
+            }
+            p{
+                width: 428px;
+            }
+        }
+        .scroll-down{
+            p{
+                font-size: 20px;
+            }
+            span.mouse{
+                width: 36px;
+                height: 60px;
+            }
+            span.arrow-span{
+                left: 33%;
+    top: -28%;
+            }
+        }
+    }
+    
+}

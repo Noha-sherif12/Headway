@@ -1,0 +1,28 @@
+//import global-rules
+@use './layout/global-rules' as*;
+
+//import variables
+@use './variables/variables' as*;
+
+//import header
+@use './pages/header' as*;
+
+//import countries
+@use './pages/countries' as*;
+
+//import services 
+@use './pages/services' as*;
+
+
+//import plans
+@use './pages/plans' as*;
+
+//impot testimonials
+@use './pages/testimonials' as*;
+
+//import contact-us
+@use './pages/contact-us' as*;
+
+//import footer
+@use './pages/footer' as*;
+

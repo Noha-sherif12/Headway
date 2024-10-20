@@ -1,0 +1,158 @@
+@use '../variables/variables' as*;
+
+@use '../mixins/mixin' as*;
+
+.contact-us{
+    @include margin-bottom;
+    article{
+        h3{
+            @extend %h3;
+
+        }
+        p.title{
+            @extend %sub-title;
+            letter-spacing: 0.02em;
+            margin-bottom: 37.32px;
+        }
+    }
+    div{
+        form{
+            background-color: $light-yellow;
+            border: 1.5px solid $secondary-color;
+            padding-block: 44px;
+            padding-inline: $p-20;
+            border-radius: $p-25;
+            box-shadow: 10px 10px 0px 0px #000000;
+            div{
+                margin-bottom: 24px;
+                .label{
+                    margin-bottom: 14px;
+                    label{
+                        @include lama-bold;
+                        font-size: 20px;
+                        line-height: 20.2px;
+                    }
+                }
+                input{
+                    width: 280px;
+                    border: 1.5px solid #191919;
+                    border-radius: 15px;
+                    padding: {
+                        top: 16px;
+                        right: 12px;
+                        bottom: 16px;
+                        left: 19px;
+                    };
+                }
+                textarea{
+                    resize: none;
+                    width: 280px;
+                    border: 1.5px solid #191919;
+                    border-radius: 15px;
+                    padding: {
+                        top: 16px;
+                        right: 12px;
+                        bottom: 76px;
+                        left: 23px;
+                    };
+                
+                }
+            }
+            button{
+                @include semi-bold;
+                border-radius: 15px;
+                color: $main-color;
+                background-color: $secondary-color;
+                width: 280px;
+                text-align: center;
+                font-size: 17px;
+                line-height: 24px;
+                padding-block: 18px;
+            }
+
+        }
+        .help-team{
+            display: flex;
+            flex-direction: column;
+
+            .helping-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+                @include text-center;
+                width: 100%;
+                img{
+                    width: 50%;
+                    padding-top: 40px;
+                }
+                article{
+                    p{
+                        width: 302px;
+                        margin: auto;
+                        color: $light-black;
+                        font-size: 17px;
+                        line-height: 28px;
+                        span{
+                            color: $purple;
+                        }
+                    }
+                    h5{
+                        @include lama-bold;
+                        font-size: 20px;
+                        line-height: 20.2px;
+                        color: $secondary-color;
+                        padding-top: 28px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .contact-us{
+        article{
+            h3{
+                font-size: 24px;
+                line-height: 24.24px;
+                margin-bottom: 24px;
+            }
+            p.title{
+                line-height: 48.48px;
+                font-size: 48px;
+            }
+        }
+        .contacts-container{
+            display: flex;
+            gap: 4rem;
+            form{
+                width: calc((100% - 64px)/2);
+                div{
+                    input{
+                        width: 100%;
+                    }
+                    textarea{
+                        width: 100%;
+                    }
+                }
+            }
+            .help-team{
+                .helping-card{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    article{
+                        text-align: right;
+                        margin-right: 24px;
+                        h5{
+                            padding-bottom: 16px;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

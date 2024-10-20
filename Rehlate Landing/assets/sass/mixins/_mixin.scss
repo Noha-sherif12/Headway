@@ -1,0 +1,74 @@
+
+@use '../variables/variables' as*;
+
+@font-face {
+    font-family: Lama Sans;
+    src: url(/assets/fonts/LamaSans-Regular.ttf);
+}
+@font-face {
+    font-family: "Lama sans Bold";
+    src: url(/assets/fonts/LamaSans-Bold.ttf);
+}
+@font-face {
+    font-family: "lama sans semi-bold";
+    src: url(/assets/fonts/LamaSans-SemiBold.otf);
+}
+@mixin lama-bold{
+    font-family: "Lama sans Bold";
+}
+@mixin lama-sans{
+    font-family: Lama Sans;
+}
+@mixin semi-bold{
+    font-family: "lama sans semi-bold";
+}
+@mixin flex-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin margin-bottom{
+    margin-bottom: $p-76;
+}
+@mixin text-center{
+    text-align: center;
+}
+
+@mixin m-auto{
+    margin: auto;
+}
+
+@mixin f-24{
+    font-size: $f-size-24;
+    line-height: 24.24px;
+}
+
+@mixin list-style{
+    list-style: none;
+}
+
+%h3{
+font-weight: $f-weight-b;
+line-height: 16.16px;
+color: $gray;
+margin-bottom: $p-12;
+}
+
+%sub-title{
+    font-size: $f-size-24;
+    font-weight: $f-weight-b;
+    line-height: 24.24px;
+    color: $secondary-color;
+}
+
+%flex-column{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}

@@ -1,0 +1,170 @@
+@use '../variables/variables' as*;
+
+@use '../mixins/mixin' as*;
+
+%plan{
+    padding-block: $p-36;
+    padding-inline: $p-24;
+    border: 1.5px solid #191919;
+    box-shadow: 10px 10px 0px 0px #000000;
+    border-radius: $p-25;
+    article{
+        p.price{
+            font-weight: $f-weight-sb;
+            font-size: $f-size-18;
+            line-height: 19.08px;
+            span{
+                @include lama-bold;
+                font-size: $f-size-36;
+                line-height: 36.36px;
+                span.dollar-sign{
+                    font-size: $f-size-32;
+                    line-height: 32.32px;
+                }
+            }
+        }
+        h6{
+            @include lama-bold;
+            font-size: $f-size-20;
+            line-height: 20.2px;
+            padding-block: $p-16;
+        }
+        p.descrip{
+            width: 272px;
+            line-height: 28px;
+            font-size: $f-size-17;
+            margin-bottom: $p-65;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                left: 0;
+                bottom: -32px;
+            }
+        }
+    }
+    ul{
+        @include list-style;
+        padding-bottom: $p-44;
+        li{
+            @include semi-bold;
+            padding-bottom: $p-19;
+            i{
+                margin-left: $p-8;
+                padding: {
+                    top: $p-7;
+                    bottom: $p-6;
+                    left: $p-7;
+                    right: $p-6;
+                }
+                border-radius: 50%;
+                background-color: $main-color;
+                color: $secondary-color;
+                
+            }
+        }
+    }
+    .booking{
+        width: 272px;
+        @include text-center;
+        border-radius: $p-15;
+        padding-block: $p-17;
+        span.booking-arrow{
+            padding-inline: 13px;
+            padding-block: 9px;
+            background-color: $main-color;
+            border-radius: 50%;
+            margin-right: $p-12;
+        }
+    }
+}
+
+.plans{
+    @include margin-bottom;
+    article{
+        h3{
+            @extend %h3;
+        }
+        p.title{
+            @extend %sub-title;
+            letter-spacing: 0.02em;
+            margin-bottom: 37.32px;
+        }
+    }
+    .plans-container{
+        .plan-holder{
+            padding-top: $p-11;
+            padding-bottom: 30px;
+            width: 100%;
+        }
+        @extend %flex-column;
+        .yellow-plan{
+            color: $secondary-color;
+            @extend %plan;
+            background-color: $light-yellow;
+            p.descrip{
+                &::after{
+                    background-color: $light-black;
+                }
+            }
+            .booking{
+                border: 1px solid $main-color;
+            }
+        }
+        .blue-plan{
+            color: $main-color;
+            @extend %plan;
+            background-color: $blue;
+            p.descrip{
+                &::after{
+                    background-color: $gray;
+                }
+            }
+        .booking{
+            border: 1px solid $main-color;
+            }
+    }
+    }
+}
+
+@media (min-width: 768px){
+    .plans{
+        article{
+            h3{
+                font-size: 24px;
+                line-height: 24.24px;
+                margin-bottom: 24px;
+            }
+            p.title{
+                line-height: 48.48px;
+                font-size: 48px;
+            }
+        }
+        .plans-container{
+            flex-direction: row;
+            .middle{
+                margin-inline: 44px;
+                margin-bottom: 47px;
+            }
+            .plan-holder{
+                width: calc((100% - 90px)/3);
+                .yellow-plan , .blue-plan{
+                    h6{
+                        font-size: 24px;
+                    }
+                    p.descrip{
+                        line-height: 28px;
+                        font-size: 18px;
+                        width: 100%;
+                    }
+                    .booking{
+                        width: 100%;
+                    }
+                } 
+            
+            }
+        }
+    }
+}

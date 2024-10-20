@@ -1,0 +1,17 @@
+@use '../mixins/mixin' as*;
+
+
+*{
+    box-sizing: border-box;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    @include lama-sans;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+
