@@ -1,0 +1,292 @@
+@font-face {
+  font-family: "STC forward ";
+  src: url(/content/fonts/STC\ Forward\ Regular.woff);
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+.gutter-x {
+  --bs-gutter-x: 0px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
+.ms-36 {
+  margin-right: 36px;
+}
+
+.ms-21 {
+  margin-left: 21px;
+}
+
+.ms-5px {
+  margin-left: 5px;
+}
+
+.ms-40 {
+  margin-left: 40px;
+}
+
+.ms-62 {
+  margin-left: 62px;
+}
+
+.me-28 {
+  margin-right: 28px;
+}
+
+.me-48 {
+  margin-right: 48px;
+}
+
+.ms-8 {
+  margin-left: 8px;
+}
+
+.mb-17 {
+  margin-bottom: 17px;
+}
+
+.mb-14 {
+  margin-bottom: 14px;
+}
+
+.mb-22 {
+  margin-bottom: 22px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.mb-34 {
+  margin-bottom: 34px;
+}
+
+.bg-input {
+  background-color: #f7f7f7;
+}
+
+.bg-red {
+  background-color: #FF375E;
+}
+
+.bg-table {
+  background-color: #F6F6F6;
+}
+
+.bg-secondary-gray {
+  background-color: #F3F3F1;
+}
+
+.bg-main {
+  background-color: #4F008C;
+}
+
+.w-336 {
+  width: 336px;
+}
+
+.w-288 {
+  width: 288px;
+}
+
+header {
+  margin-bottom: 5px;
+}
+header nav {
+  padding-right: 36px !important;
+}
+header nav img {
+  margin-top: 13px;
+  margin-bottom: 14px;
+  margin-left: 32px;
+}
+header nav div .global {
+  padding-block: 29px;
+  height: 100%;
+  position: relative;
+}
+header nav div .global::after {
+  content: "";
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 5px;
+  top: 0;
+  left: -16px;
+  height: 100%;
+}
+header nav div .global::before {
+  content: "";
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 5px;
+  top: 0;
+  right: -16px;
+  height: 100%;
+}
+header nav form select {
+  border: none;
+}
+
+.row aside {
+  background-color: #4F008C;
+  padding-top: 60px;
+}
+.row aside ul {
+  font-family: "STC forward ";
+}
+.row aside ul li {
+  padding-left: 30px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+.row aside ul li:hover {
+  background-color: #420374;
+  border-left: #FF375E solid 5px;
+}
+
+.main {
+  margin-top: 50px;
+  padding-left: 36px;
+}
+.main .title {
+  font-family: "STC forward ";
+  margin-bottom: 16px;
+  line-height: 38.4px;
+  font-weight: 700;
+}
+.main .sub-title {
+  margin-bottom: 30px;
+  color: #8E9AA0;
+  font-family: "STC forward ";
+  line-height: 31.3px;
+}
+.main div form {
+  font-family: "STC forward ";
+}
+.main div form .search {
+  padding-inline: 16px;
+  border-bottom: 3px solid #8E9AA0;
+}
+.main div form .search i {
+  color: #8E9AA0;
+  padding-right: 11px;
+}
+.main div form .select {
+  padding-inline: 16px;
+}
+.main div form .select select {
+  border: none;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  line-height: 19px;
+  font-weight: 500;
+}
+.main div div span.process {
+  padding-block: 6px;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  padding-left: 16px;
+  padding-right: 11px;
+  font-family: "STC forward ";
+  font-weight: 500;
+  line-height: 19px;
+}
+.main div div span.pend {
+  padding-block: 6px;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  padding-inline: 22px;
+  font-family: "STC forward ";
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 19px;
+}
+.main table {
+  margin-top: 60px;
+}
+.main table th {
+  font-family: "STC forward ";
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+}
+.main table td {
+  font-family: "STC forward ";
+  padding-block: 28px;
+  padding-left: 24px;
+}
+
+input {
+  border: none;
+}
+
+ul {
+  list-style: none;
+}/*# sourceMappingURL=main.css.map */

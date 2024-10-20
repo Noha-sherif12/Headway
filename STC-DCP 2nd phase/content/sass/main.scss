@@ -1,0 +1,35 @@
+//fonts
+@use './shared/fonts' as*;
+
+//properties
+@use './shared/properties' as*;
+
+//reset
+@use './shared/reset' as*;
+
+//utilities
+@use './shared/utilities' as*;
+
+//mixins
+@use './utils/mixins' as*;
+
+
+//header
+@use './components/header' as*;
+
+//aside
+@use './components/aside' as*;
+
+
+//main
+@use './components/main' as*;
+
+
+
+
+input{
+    border: none;
+}
+ul{
+    list-style: none;
+}

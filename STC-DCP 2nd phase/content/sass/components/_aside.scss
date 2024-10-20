@@ -1,0 +1,21 @@
+@use "../shared/properties" as *;
+
+.row {
+  aside {
+    background-color: $main-color;
+    padding-top: $p-60;
+    ul {
+      font-family: "STC forward ";
+
+      li {
+        padding-left: $p-30;
+        padding-top: $p-7;
+          padding-bottom: $p-8;
+        &:hover {
+          background-color: $hover-bg;
+          border-left: $red-color solid $p-5;
+        }
+      }
+    }
+  }
+}

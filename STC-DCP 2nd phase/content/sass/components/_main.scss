@@ -1,0 +1,80 @@
+@use "../shared/properties" as *;
+
+.main {
+  margin-top: $p-50;
+  padding-left: $p-36;
+  .title {
+    font-family: "STC forward ";
+    margin-bottom: $p-16;
+    line-height: $p-38;
+    font-weight: 700;
+  }
+  .sub-title {
+    margin-bottom: $p-30;
+    color: $gray-color;
+    font-family: "STC forward ";
+    line-height: $p-31;
+  }
+  div {
+    form {
+      font-family: "STC forward ";
+      .search{
+        padding-inline: $p-16;
+        i{
+          color: $gray-color;
+          padding-right: $p-11;
+        }
+        border-bottom: $p-3 solid $gray-color;
+      }
+      .select {
+        padding-inline: $p-16;
+        select{
+          border: none;
+          width: 100%;
+          padding-top: $p-20;
+          padding-bottom: $p-16;
+          line-height: $p-19;
+          font-weight: 500;
+        }
+      }
+    }
+    div{
+      span.process{
+        padding-block: $p-6;
+        border-top-left-radius: $p-80;
+        border-bottom-left-radius: $p-80;
+        padding-left: $p-16;
+        padding-right: $p-11;
+        font-family: "STC forward ";
+        font-weight: 500;
+        line-height: $p-19;
+      }
+      span.pend{
+        padding-block: $p-6;
+        border-top-right-radius: $p-80;
+        border-bottom-right-radius: $p-80;
+        padding-inline: $p-22;
+        font-family: "STC forward ";
+        font-weight: 500;
+        color: $white-color;
+        line-height: $p-19;
+      }
+    }
+  }
+
+  table {
+    margin-top: $p-60;
+    th {
+      font-family: "STC forward ";
+      font-weight: 700;
+      font-size: $p-20;
+      padding-left: $p-24;
+      padding-bottom: $p-24;
+    }
+    td {
+        font-family: "STC forward ";
+      padding-block: $p-28;
+      padding-left: $p-24;
+    }
+  }
+}
