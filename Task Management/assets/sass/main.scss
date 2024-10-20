@@ -1,0 +1,48 @@
+//grid
+@use "./shared/grid" as *;
+
+//properties
+@use "./shared/properties" as *;
+
+//reset
+@use "./shared/reset" as *;
+
+//components
+@use "./components/components" as *;
+
+//mixins
+@use "./utils/mixins" as *;
+
+//utilities
+@use "./shared/utilities" as *;
+
+@use "./components/assign" as *;
+
+@use "./components/tasks" as *;
+
+@use "./components/weekly-progress" as *;
+
+@use "./components/konsep-design" as *;
+
+@use "./components/task-progress" as *;
+
+@use "./components/recent-activity" as *;
+
+@use "./components/create-new" as *;
+
+@use "./components/file-attachement" as *;
+
+@use "./components/header" as *;
+
+// @font-face {
+//   font-family: "Poppins-Regular";
+//   src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+// }
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+body {
+  background-color: $secondary-bg;
+}

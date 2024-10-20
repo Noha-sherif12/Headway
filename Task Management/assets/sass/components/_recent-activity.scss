@@ -1,0 +1,49 @@
+@use '../components/components' as*;
+
+// @use '../shared/fonts' as*;
+
+@use '../utils/mixins' as*;
+
+@use '../shared/properties' as*;
+
+@mixin flag{
+    border-radius: 50%;
+    padding-top: 8.17px;
+    padding-right: 7.83px;
+    padding-bottom: 4.83px;
+    padding-left: 9.17px;
+}
+.green-frame{
+    background-color: $green;
+    @include flag;
+}
+.purple-frame{
+    padding-top: 7px;
+    border-radius: 50%;
+    background-color: #7784EE;
+    padding-right: 9px;
+    padding-bottom: 7px;
+    padding-left: 9px;
+}
+.yellow-frame{
+    @include flag;
+    background-color: $yellow;
+}
+
+
+    .inner-recent-activity{
+        margin-top: $p-40;
+        @include inner;
+        padding-block: 28px;
+        padding-left: 28.5px;
+        .people-acyivity{
+            padding-left: $p-12;
+            p.comment{
+                span{
+                    font-family: "Poppins-SemiBold";
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+

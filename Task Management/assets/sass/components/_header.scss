@@ -1,0 +1,76 @@
+@use "../components/components" as *;
+
+// @use "../shared/fonts" as *;
+
+@use "../utils/mixins" as *;
+
+@use "../shared/properties" as *;
+
+@use "../shared/utilities" as *;
+
+header {
+  box-shadow: 0px 30px 60px 0px #20385526;
+  background-color: $white-color;
+  border-radius: $p-8;
+
+  nav {
+    // flex-wrap: wrap;
+    div {
+      font-family: "Poppins-Bold";
+      padding-left: $p-24;
+      span {
+        font-family: "Poppins-Bold";
+        @include circle(28px);
+        background-color: $primary-color;
+        font-size: $fs-12-25;
+        color: $white-color;
+        line-height: $line-13-13;
+        letter-spacing: 0.26px;
+      }
+      p {
+        padding-left: $p-10;
+        color: $primary-color;
+      }
+    }
+
+    form {
+        margin-inline: $p-10;
+      div {
+        width: 100%;
+        margin-top: $p-12;
+        background-color: $light-gray;
+        border-radius: 200px;
+        img {
+          padding-block: $p-12;
+        }
+        input {
+          font-family: "Poppins-Regular";
+          width: 100%;
+          background-color: $light-gray;
+          padding-left: $p-10;
+        }
+      }
+    }
+    ul {
+      font-family: "Poppins-SemiBold";
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    nav {
+      justify-content: space-between;
+      align-items: center;
+      form {
+        div {
+          width: 788px;
+          margin-top: 0;
+          input {
+            padding-left: $p-25;
+          }
+        }
+      }
+    }
+  }
+}
