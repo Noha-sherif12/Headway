@@ -1,0 +1,54 @@
+
+
+@use '../variables/variables' as*;
+
+@use '../mixins/mixin' as*;
+
+aside{
+    grid-area: one;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 80%;
+        background-color: #edeaea;
+        width: 1px;
+        top: 0;
+        right: 0;
+    }
+    h1{
+        padding-top: $p_19;
+        padding-inline: $p_26;
+        @include jua;
+    }
+    div{
+        @include flex-center;
+        flex-direction: column;
+        h2{
+            padding-top: $p_8;
+            font-size: 25px;
+            line-height: 31.25px;
+            @include jua;
+        }
+        p{
+            color: $secondary_color;
+            font-size: 18px;
+            line-height: 21.78px;
+            @include inter;
+        }
+    }
+    ul{
+        padding-top: $p_64;
+        padding-left: $p_26;
+        @include inter;
+        @include list;
+        li {
+            padding-bottom: $p_10;
+            color: $secondary_color;
+            display: flex;
+            span{
+                padding-left: $p_5;
+            }
+        }
+    }
+}

@@ -1,0 +1,432 @@
+header {
+  grid-area: two;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 19px;
+  margin-left: 34px;
+  margin-right: 42px;
+  padding-right: 58px;
+  padding-block: 25px;
+  position: relative;
+}
+header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: #edeaea;
+  height: 1px;
+  bottom: 0;
+  left: -35px;
+}
+header h2 {
+  font-family: "Jua";
+}
+header div {
+  display: flex;
+}
+header div .img-span {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  background-color: rgba(217, 217, 217, 0.5803921569);
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1294117647);
+  border-radius: 5px;
+}
+header div button {
+  border: none;
+  background-color: #55C875;
+  margin-left: 21px;
+  border-radius: 5px;
+}
+header div button div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+header div button div span {
+  padding-left: 5px;
+}
+
+aside {
+  grid-area: one;
+  position: relative;
+}
+aside::after {
+  content: "";
+  position: absolute;
+  height: 80%;
+  background-color: #edeaea;
+  width: 1px;
+  top: 0;
+  right: 0;
+}
+aside h1 {
+  padding-top: 19px;
+  padding-inline: 26px;
+  font-family: "Jua";
+}
+aside div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+aside div h2 {
+  padding-top: 8px;
+  font-size: 25px;
+  line-height: 31.25px;
+  font-family: "Jua";
+}
+aside div p {
+  color: #7C7C7C;
+  font-size: 18px;
+  line-height: 21.78px;
+  font-family: "Inter";
+}
+aside ul {
+  padding-top: 64px;
+  padding-left: 26px;
+  font-family: "Inter";
+  list-style: none;
+}
+aside ul li {
+  padding-bottom: 10px;
+  color: #7C7C7C;
+  display: flex;
+}
+aside ul li span {
+  padding-left: 5px;
+}
+
+main .contact ul li span.chat, main .contact ul li span.unread-mail, main .contact ul li span.phone {
+  padding: 8px;
+  border-radius: 4px;
+}
+
+main {
+  grid-area: three;
+  display: flex;
+}
+main .items .item-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 21px;
+  margin-bottom: 21px;
+  margin-top: 10px;
+  border: 0.5px solid rgba(137, 137, 137, 0.431372549);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Inter";
+}
+main .items .item-1 div {
+  padding-left: 53px;
+  padding-right: 76px;
+}
+main .items .item-1 div p {
+  font-size: 20px;
+  font-weight: 600;
+}
+main .items .item-1 div span {
+  font-size: 15px;
+  color: #636363;
+}
+main .items .item-1 .mob-numb {
+  padding-right: 72px;
+}
+main .items .item-1 .email {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  color: #696969;
+}
+main .items .item-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 21px;
+  margin-bottom: 21px;
+  margin-top: 10px;
+  border: 0.5px solid rgba(137, 137, 137, 0.431372549);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Inter";
+}
+main .items .item-2 div {
+  padding-left: 53px;
+  padding-right: 76px;
+}
+main .items .item-2 div p {
+  font-size: 20px;
+  font-weight: 600;
+}
+main .items .item-2 div span {
+  font-size: 15px;
+  color: #636363;
+}
+main .items .item-2 .mob-numb {
+  padding-right: 72px;
+}
+main .items .item-2 .email {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  color: #696969;
+}
+main .items .item-3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 21px;
+  margin-bottom: 21px;
+  margin-top: 10px;
+  border: 0.5px solid rgba(137, 137, 137, 0.431372549);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Inter";
+}
+main .items .item-3 div {
+  padding-left: 53px;
+  padding-right: 76px;
+}
+main .items .item-3 div p {
+  font-size: 20px;
+  font-weight: 600;
+}
+main .items .item-3 div span {
+  font-size: 15px;
+  color: #636363;
+}
+main .items .item-3 .mob-numb {
+  padding-right: 72px;
+}
+main .items .item-3 .email {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  color: #696969;
+}
+main .items .item-4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 21px;
+  margin-bottom: 21px;
+  margin-top: 10px;
+  border: 0.5px solid rgba(137, 137, 137, 0.431372549);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Inter";
+}
+main .items .item-4 div {
+  padding-left: 53px;
+  padding-right: 76px;
+}
+main .items .item-4 div p {
+  font-size: 20px;
+  font-weight: 600;
+}
+main .items .item-4 div span {
+  font-size: 15px;
+  color: #636363;
+}
+main .items .item-4 .mob-numb {
+  padding-right: 72px;
+}
+main .items .item-4 .email {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  color: #696969;
+}
+main .items .item-5 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 21px;
+  margin-bottom: 21px;
+  margin-top: 10px;
+  border: 0.5px solid rgba(137, 137, 137, 0.431372549);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Inter";
+}
+main .items .item-5 div {
+  padding-left: 53px;
+  padding-right: 76px;
+}
+main .items .item-5 div p {
+  font-size: 20px;
+  font-weight: 600;
+}
+main .items .item-5 div span {
+  font-size: 15px;
+  color: #636363;
+}
+main .items .item-5 .mob-numb {
+  padding-right: 72px;
+}
+main .items .item-5 .email {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  color: #696969;
+}
+main .items .item-6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 21px;
+  margin-bottom: 21px;
+  margin-top: 10px;
+  border: 0.5px solid rgba(137, 137, 137, 0.431372549);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Inter";
+}
+main .items .item-6 div {
+  padding-left: 53px;
+  padding-right: 76px;
+}
+main .items .item-6 div p {
+  font-size: 20px;
+  font-weight: 600;
+}
+main .items .item-6 div span {
+  font-size: 15px;
+  color: #636363;
+}
+main .items .item-6 .mob-numb {
+  padding-right: 72px;
+}
+main .items .item-6 .email {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  color: #696969;
+}
+main .items .item-7 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 21px;
+  margin-bottom: 21px;
+  margin-top: 10px;
+  border: 0.5px solid rgba(137, 137, 137, 0.431372549);
+  border-radius: 5px;
+  padding: 10px;
+  font-family: "Inter";
+}
+main .items .item-7 div {
+  padding-left: 53px;
+  padding-right: 76px;
+}
+main .items .item-7 div p {
+  font-size: 20px;
+  font-weight: 600;
+}
+main .items .item-7 div span {
+  font-size: 15px;
+  color: #636363;
+}
+main .items .item-7 .mob-numb {
+  padding-right: 72px;
+}
+main .items .item-7 .email {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 21.78px;
+  color: #696969;
+}
+main .contact {
+  width: 30%;
+}
+main .contact .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-block: 80px;
+}
+main .contact .profile .name {
+  font-family: "Jua";
+  padding-top: 5px;
+}
+main .contact .profile span {
+  font-family: "Inter";
+  color: #7C7C7C;
+}
+main .contact .profile img {
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.1019607843);
+}
+main .contact .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Jua";
+  border-radius: 10px;
+  background-color: #EEEEEE;
+  width: 90%;
+  margin: auto;
+}
+main .contact .info div {
+  flex-basis: 103px;
+  text-align: center;
+  color: #555555;
+  padding-top: 7px;
+  padding-bottom: 9px;
+}
+main .contact .info .bg-green {
+  background-color: rgba(68, 222, 111, 0.9411764706);
+  margin: 1px;
+  border-radius: 10px;
+}
+main .contact ul {
+  font-family: "Inter";
+  list-style: none;
+  margin-top: 35px;
+}
+main .contact ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  margin-bottom: 21px;
+  margin-inline: 21px;
+}
+main .contact ul li div p {
+  color: #7C7C7C;
+  padding-bottom: 3px;
+}
+main .contact ul li span.phone {
+  background-color: rgba(137, 242, 166, 0.6588235294);
+}
+main .contact ul li span.unread-mail {
+  background-color: rgba(242, 225, 137, 0.6588235294);
+}
+main .contact ul li span.chat {
+  background-color: rgba(127, 209, 255, 0.6588235294);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+  font-family: "Jua";
+  src: url(../fonts/Jua-Regular.ttf);
+}
+.container {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-areas: "one two two" "one three three";
+}/*# sourceMappingURL=main.css.map */
